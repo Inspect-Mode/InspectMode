@@ -6,10 +6,10 @@ $(document).ready(function () {
     $("#footer").html(data);
   });
 
-  // $.ajax({
-  //   url: "master/header.html",
-  //   context: document.body,
-  // }).done(function (data) {
-  //   $("#header").html(data);
-  // });
+  $.ajax({
+    url: "master/header.html",
+    context: document.body,
+  }).done(function (data) {
+    $("#header").html(data);
+  });
 });
