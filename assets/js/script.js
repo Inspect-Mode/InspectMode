@@ -5,11 +5,12 @@ $(document).ready(function () {
   }).done(function (data) {
     $("#footer").html(data);
   });
-
-  $.ajax({
-    url: "master/header.html",
-    context: document.body,
-  }).done(function (data) {
-    $("#header").html(data);
-  });
 });
+
+/*   $.ajax({
+//     url: "master/header.html",
+//     context: document.body,
+//   }).done(function (data) {
+//     $("#header").html(data);
+//   });
+*/
