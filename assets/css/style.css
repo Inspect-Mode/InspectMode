@@ -75,7 +75,7 @@ i.bx {
   transform: translate(calc(-50% - 100px), -50%);
   z-index: 9;
 }
-.cursor2 {
+/* .cursor2 {
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -87,7 +87,7 @@ i.bx {
   -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
   transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 9;
-}
+} */
 .preloader {
   position: fixed;
   width: 100%;
