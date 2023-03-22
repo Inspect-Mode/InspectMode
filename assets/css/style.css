@@ -2471,11 +2471,11 @@ header .header-logo {
   color: #9da1a5;
   margin-bottom: 25px;
 }
-.about-card .about-content ul {
+/* .about-card .about-content ul {
   margin-bottom: 32px;
-}
+} */
 .about-card .about-content ul li {
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 }
 .about-card .about-content ul li:hover a {
   color: #cf2435;
