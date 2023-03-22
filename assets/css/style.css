@@ -456,17 +456,17 @@ i.bx {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .section-title h2 {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .section-title h2 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 @media (max-width: 767px) {
   .section-title h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 .section-title4 {
