@@ -2464,7 +2464,7 @@ header .header-logo {
   }
 }
 .about-card .about-content p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-family: nunito, sans-serif;
   line-height: 26px;
@@ -2475,7 +2475,7 @@ header .header-logo {
   margin-bottom: 32px;
 } */
 .about-card .about-content ul li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .about-card .about-content ul li:hover a {
   color: #cf2435;
