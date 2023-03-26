@@ -1919,9 +1919,9 @@ header .header-logo {
       from(rgba(0, 2, 20, 0.75)),
       to(rgba(0, 2, 20, 0.75))
     ),
-    url("../images/banner/banner21.png");
+    url("../images/banner/banner21.html");
   background-image: linear-gradient(rgba(0, 2, 20, 0.75), rgba(0, 2, 20, 0.75)),
-    url("../images/banner/banner21.png");
+    url("../images/banner/banner21.html");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1933,9 +1933,9 @@ header .header-logo {
       from(rgba(0, 2, 20, 0.75)),
       to(rgba(0, 2, 20, 0.75))
     ),
-    url("../images/banner/banner22.png");
+    url("../images/banner/banner22.html");
   background-image: linear-gradient(rgba(0, 2, 20, 0.75), rgba(0, 2, 20, 0.75)),
-    url("../images/banner/banner22.png");
+    url("../images/banner/banner22.html");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1951,7 +1951,7 @@ header .header-logo {
   }
 }
 .banner-section2 .swiper-slide::after {
-  content: url(../images/banner/banner-top-right.png);
+  content: url(../images/banner/banner-top-right.html);
   position: absolute;
   top: 0;
   right: 0;
@@ -1959,7 +1959,7 @@ header .header-logo {
   width: 100%;
 }
 .banner-section2 .swiper-slide::before {
-  content: url(../images/banner/banner-bottom-left.png);
+  content: url(../images/banner/banner-bottom-left.html);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -5110,12 +5110,12 @@ header .header-logo {
       from(rgba(23, 24, 26, 0.9)),
       to(rgba(23, 24, 26, 0.9))
     ),
-    url("../images/bg/hire-bg.png");
+    url("../images/bg/hire-bg.html");
   background-image: linear-gradient(
       rgba(23, 24, 26, 0.9),
       rgba(23, 24, 26, 0.9)
     ),
-    url("../images/bg/hire-bg.png");
+    url("../images/bg/hire-bg.html");
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
