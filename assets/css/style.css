@@ -2750,9 +2750,9 @@ header .header-logo {
   }
 }
 @media (max-width: 767px) {
-  .achievment-section .achievment-box {
-    /* margin-bottom: 60px; */
-  }
+  /* .achievment-section .achievment-box {
+    margin-bottom: 60px;
+  } */
 }
 .achievment-section .achievment-box .single-counter {
   min-width: 180px;
