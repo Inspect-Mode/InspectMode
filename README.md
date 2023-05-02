@@ -1,2 +1,2 @@
 # InspectMode
-Portfolio of Inspect Mode
+Portfolio of KB Softec
