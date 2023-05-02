@@ -87,19 +87,7 @@ i.bx {
   transform: translate(calc(-50% - 100px), -50%);
   z-index: 9;
 }
-/* .cursor2 {
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  background-color: #e6e6e6;
-  position: fixed;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  -webkit-transition: width 0.3s, height 0.3s, opacity 0.3s;
-  transition: width 0.3s, height 0.3s, opacity 0.3s;
-  z-index: 9;
-} */
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -118,126 +106,54 @@ i.bx {
   -ms-flex-pack: center;
   justify-content: center;
 }
-@-webkit-keyframes loader {
-  0%,
-  10%,
-  100% {
-    width: 80px;
-    height: 80px;
-  }
-  65% {
-    width: 150px;
-    height: 150px;
-  }
-}
-@keyframes loader {
-  0%,
-  10%,
-  100% {
-    width: 80px;
-    height: 80px;
-  }
-  65% {
-    width: 150px;
-    height: 150px;
-  }
-}
-@-webkit-keyframes loaderBlock {
-  0%,
-  30% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  55% {
-    background-color: #fff;
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: translateY(-25px);
   }
 }
-@keyframes loaderBlock {
-  0%,
-  30% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  55% {
-    background-color: #d90a2c;
+
+@keyframes animloader {
+  0% {
+    transform: scale(0.8);
   }
   100% {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: scale(1.2);
   }
 }
-@-webkit-keyframes loaderBlockInverse {
-  0%,
-  20% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  55% {
-    background-color: #fff;
-  }
-  100% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
-@keyframes loaderBlockInverse {
-  0%,
-  20% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  55% {
-    background-color: #d90a2c;
-  }
-  100% {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-  }
-}
+
 .preloader .loader {
+  position: relative;
+  display: inline-block;
+}
+
+.preloader .loader:before{
+  content: 'KB Softec';
+  color: #FFF;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 200px;
+  letter-spacing: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: floating 1s ease-out infinite alternate;
+}
+.preloader .loader:after{
+  content: '';  
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.15);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
-  height: 80px;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
-  transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
-  -webkit-animation: loader 1.2s infinite ease-in-out;
-  animation: loader 1.2s infinite ease-in-out;
-}
-.preloader .loader span {
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  -webkit-animation: loaderBlock 1.2s infinite ease-in-out both;
-  animation: loaderBlock 1.2s infinite ease-in-out both;
-}
-.preloader .loader span:nth-child(1) {
-  top: 0;
   left: 0;
+  top: 100%;
+  filter: blur(4px);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animloader 1s ease-out infinite alternate;
 }
-.preloader .loader span:nth-child(2) {
-  top: 0;
-  right: 0;
-  -webkit-animation: loaderBlockInverse 1.2s infinite ease-in-out both;
-  animation: loaderBlockInverse 1.2s infinite ease-in-out both;
-}
-.preloader .loader span:nth-child(3) {
-  bottom: 0;
-  left: 0;
-  -webkit-animation: loaderBlockInverse 1.2s infinite ease-in-out both;
-  animation: loaderBlockInverse 1.2s infinite ease-in-out both;
-}
-.preloader .loader span:nth-child(4) {
-  bottom: 0;
-  right: 0;
-}
+
 .primary--bg {
   background-color: #17181a;
 }
