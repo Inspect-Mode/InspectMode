@@ -88,6 +88,7 @@ i.bx {
   z-index: 9;
 }
 
+ /* Preloader is a main loader class */
 .preloader {
   position: fixed;
   width: 100%;
@@ -107,6 +108,7 @@ i.bx {
   justify-content: center;
 }
 
+/* Loader class keyframes to animate the loader */
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -125,6 +127,7 @@ i.bx {
   }
 }
 
+/* Loader css to loading KB Softec */
 .preloader .loader {
   position: relative;
   display: inline-block;
@@ -152,6 +155,60 @@ i.bx {
   border-radius: 50%;
   box-sizing: border-box;
   animation: animloader 1s ease-out infinite alternate;
+}
+
+/* Loader media query to tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .preloader .loader:before{
+    content: 'KB Softec';
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: floating 1s ease-out infinite alternate;
+  }
+  .preloader .loader:after{
+    content: '';  
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    filter: blur(4px);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: animloader 1s ease-out infinite alternate;
+  }
+}
+
+/* Loader media query to mobile view */
+@media (max-width: 767px) {
+  .preloader .loader:before{
+    content: 'KB Softec';
+    color: #FFF;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: floating 1s ease-out infinite alternate;
+  }
+  .preloader .loader:after{
+    content: '';  
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    filter: blur(4px);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: animloader 1s ease-out infinite alternate;
+  }
 }
 
 .primary--bg {
